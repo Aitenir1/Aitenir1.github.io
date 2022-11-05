@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  /* background: url("media/back2.jpg") no-repeat center fixed; */
+
+  color: white;
+  /* font-family: "Inconsolata", monospace; */
+  font-family: "Source Code Pro", monospace;
+
+  font-size: 28px;
+  line-height: 1.6;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Intro */
+.intro {
+  width: 100%;
+  height: 100vh;
+
+  padding-top: 2em;
+}
+
+.intro_item {
+  margin: 0 auto 2em auto;
+}
+
+.with_border {
+  border: 1px solid white;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Kalam", cursive;
+  padding: 2em 0;
+  transition: font-family 0.2s linear;
+}
+
+.topic_title {
+  font-size: 5vh;
+  font-weight: 700;
+  margin-bottom: 2vh;
+}
+
+/* Biography */
+
+.bio_frame {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.bio_item {
+  /* height: 20em; */
+  width: 50%;
+  padding: 2em;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s linear;
+}
+
+.bio_item:hover {
+  background-color: white;
+}
+
+.bio_item p {
+  visibility: collapse;
+  transition: all 0.2s linear;
+  text-align: center;
+  color: black;
+}
+
+.bio_item:hover p {
+  visibility: visible;
+}
+
+.bio_item span {
+  font-size: 40px;
+  font-weight: 700;
+  transition: all 0.2s linear;
+  position: absolute;
+}
+
+.bio_item:hover span {
+  visibility: hidden;
+}
+
+/* Resume */
+
+.resume_item {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.resume_item img {
+  padding: 20px;
+  margin-right: 8%;
+}
+
+/* Gallery */
+
+.gallery_inner {
+  display: flex;
+
+  width: 100%;
+  height: 80vh;
+}
+
+.gallery_inner .box {
+  flex: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  /* margin: 0 2%; */
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  line-height: 0;
+}
+
+.gallery_inner .box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  /* height: 50%; */
+  object-fit: cover;
+  transition: 0.5s;
+  filter: brightness(25%);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.gallery_inner .box > span {
+  font-size: 2vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.gallery_inner .box:hover {
+  flex: 1 1 20%;
+}
+.gallery_inner .box:hover > img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(100%);
+}
+
+/* Works */
+
+.works_inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* height: 80vh; */
+}
+
+.works_inner {
+  /* object-fit: cover; */
+}
+
+.works_inner a {
+  font-size: 3vh;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+  /* object-fit: cover; */
+}
+
+.works_inner a:hover {
+  color: grey;
+}
+
+/* Header */
+.header {
+  width: 100%;
+
+  padding-top: 15px;
+  /* position: absolute; */
+  z-index: 1000;
+
+  border-radius: 0 0 15px 15px;
+  background-color: white;
+  color: black;
+
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header_logo {
+  font-size: 45px;
+  font-weight: 700;
+
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.nav_item {
+  /* color: black; */
+  color: black;
+  transition: color 0.2s linear;
+  text-decoration: none;
+
+  display: inline-block;
+  vertical-align: top;
+
+  /* margin: 0 10px; */
+}
+
+.nav_item:hover {
+  color: grey;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  height: 100px;
+  margin-top: 50px;
+  border-radius: 15px 15px 0 0;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  margin: 10px;
+}
