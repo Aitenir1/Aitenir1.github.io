@@ -21,23 +21,33 @@
       <header class="header">
         <div class="header_logo">Aitenir the Great</div>
 
-        <nav>
-          <a href="#home" class="nav_item">Home</a>
-          <a href="#about" class="nav_item">About</a>
-          <a href="#resume" class="nav_item">Resume</a>
-          <a href="#works" class="nav_item">Works</a>
-          <a href="#gallery" class="nav_item">Gallery</a>
-          <a href="#footer" class="nav_item">Contact</a>
+        <a href="#" class="toggle_button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <nav class="navbar_links">
+          <ul>
+            <li><a href="#home" class="nav_item">Home</a></li>
+            <li><a href="#about" class="nav_item">About</a></li>
+            <li><a href="#resume" class="nav_item">Resume</a></li>
+            <li><a href="#works" class="nav_item">Works</a></li>
+            <li><a href="#gallery" class="nav_item">Gallery</a></li>
+            <li><a href="#footer" class="nav_item">Contact</a></li>
+          </ul>
         </nav>
       </header>
       <div class="intro">
-        <div class="intro_item" id="home">
-          <h1>Aitenir Zhamakeev</h1>
-          <h2>Applied Mathematics and Informatics</h2>
-          <h3>2-nd year students</h3>
+        <div id="home" class="home">
+          <img src="media/thegreat.png" alt="" width="30%" />
+          <div class="home_content">
+            <h1>Aitenir Zhamakeev</h1>
+            <h2>Applied Mathematics and Informatics</h2>
+            <h3>2-nd year students</h3>
+          </div>
         </div>
 
-        <div class="intro_item" id="about">
+        <div id="about">
           <div class="topic_title">About</div>
           <p>
             I'm 18 years old. Now I am studying at the university. I am
@@ -66,7 +76,7 @@
           </div>
         </div>
 
-        <div class="  " id="resume">
+        <div class="" id="resume">
           <div class="topic_title">Resume</div>
           <div class="resume_inner">
             <div class="resume_item">
@@ -201,5 +211,6 @@
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
